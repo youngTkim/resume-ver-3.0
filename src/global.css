@@ -1,0 +1,17 @@
+* {
+  --e-global-color-primary: #6ec1e4;
+  --e-global-color-secondary: #54595f;
+  --e-global-color-text: #7a7a7a;
+  --e-global-color-accent: #61ce70;
+  --e-global-color-8173635: #b7f;
+  --e-global-color-3e3c75b: #2c3599;
+  --e-global-color-702e101: #efefef;
+  --e-global-typography-primary-font-family: "Poppins";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Roboto Mono";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Roboto Mono";
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Roboto Mono";
+  --e-global-typography-accent-font-weight: 500;
+}
