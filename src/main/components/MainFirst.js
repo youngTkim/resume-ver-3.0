@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Scratch from "./animation/textstring/Scratch";
+// import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const MainFirstContainer = styled.section`
   display: flex;
@@ -18,14 +20,25 @@ const MainFirstInner = styled.div`
   justify-content: center;
 `;
 
-const Title = styled.span`
+const ArrowContainer = styled.span`
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
   color: white;
-  font-size: 8rem;
-  font-weight: bold;
-  letter-spacing: 0.05rem;
 `;
 
+// const Title = styled.span`
+//   color: white;
+//   font-size: 8rem;
+//   font-weight: bold;
+//   letter-spacing: 0.05rem;
+// `;
+
 const Subtitle = styled.span`
+  transform: translateY(15vh);
   color: #cccccc;
   font-size: 2rem;
   font-weight: 400;
@@ -35,10 +48,11 @@ const Subtitle = styled.span`
 function MainFirst() {
   return (
     <MainFirstContainer>
+      <ArrowContainer>{/* <ArrowDownwardIcon /> */}</ArrowContainer>
       <MainFirstInner>
-        <Title>{`YoungTeck`}</Title>
         <Subtitle>{`Frontend devloper & Web Enginner, youngteck kim`}</Subtitle>
       </MainFirstInner>
+      <Scratch />
     </MainFirstContainer>
   );
 }
