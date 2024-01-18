@@ -10,7 +10,7 @@ const BackgroundWrapper = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 300vh;
+  height: 400vh;
 `;
 
 function Background() {

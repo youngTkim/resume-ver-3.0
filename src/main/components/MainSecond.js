@@ -2,12 +2,15 @@ import styled from "styled-components";
 import AirplayIcon from "@mui/icons-material/Airplay";
 import { ReactComponent as ReactIcon } from "../../assets/ReactIcon.svg";
 import MoreIcon from "@mui/icons-material/More";
+import HtmlImage from "../../assets/HtmlImage.png";
 
 const MainSecondWrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  margin-bottom: 20vh;
 `;
 const TitleContainer = styled.section`
   display: flex;
@@ -111,6 +114,15 @@ const KR = styled.span`
   font-weight: bold;
 `;
 
+const MainSecondBackground = styled.img`
+  position: absolute;
+  width: 45%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.35;
+`;
+
 function MainSecond() {
   return (
     <MainSecondWrapper id="main_second">
@@ -159,7 +171,13 @@ function MainSecond() {
             <ExplanationContainer>
               <TagImage>{`<h3>`}</TagImage>
               <Explanation>
-                <ExplanationInner>{`Socket,nestJS,mongoDB,\nexpress`}</ExplanationInner>
+                <ExplanationInner>
+                  {`Socket,nestJS,mongoDB,express\n`}
+                  <KR>{`를 통해 Api를 생성, DB와 연동,\n`}</KR>
+                  {`AWS ec2,Route 53`}
+                  <KR>{`을 통해\n`}</KR>
+                  {`도메인과 연결,배포한 경험이 있습니다.`}
+                </ExplanationInner>
               </Explanation>
               <TagImage>{`<h3>`}</TagImage>
             </ExplanationContainer>
@@ -178,7 +196,7 @@ function MainSecond() {
               </PartLogoContainer>
               <PartNames>
                 <PartName>
-                  <Underline underline="#ffc107">Etc</Underline>
+                  <Underline underline="#ffc107">{`Introduction`}</Underline>
                 </PartName>
               </PartNames>
             </PartNameContainer>
@@ -186,8 +204,9 @@ function MainSecond() {
               <TagImage>{`<h3>`}</TagImage>
               <Explanation>
                 <ExplanationInner>
-                  React,axios,canvas,recoil,styled-components,tailwind
-                  <KR>를 비롯하여 유저친화적인 웹을 만들고 있습니다.</KR>
+                  <KR>{`문제에서 기회를 포착하고,`}</KR>
+                  <KR>{`해결을 통해 성취하고, 성장하는 것을 좋아합니다.`}</KR>
+                  <KR>{`일상에서 마주한 불편함으로, 더 나은 사용자 경험에 대해 고민합니다.`}</KR>
                 </ExplanationInner>
               </Explanation>
               <TagImage>{`<h3>`}</TagImage>
@@ -195,6 +214,7 @@ function MainSecond() {
           </Expertise>
         </Expertises>
       </ExpertiseContainer>
+      <MainSecondBackground src={`${HtmlImage}`} alt="" />
     </MainSecondWrapper>
   );
 }
