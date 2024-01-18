@@ -14,7 +14,7 @@ export class Visual {
     window.addEventListener("resize", this.resize.bind(this));
 
     this.resize();
-    this.show = new Stars(this.stageWidth, this.stageHeight, 2000);
+    this.show = new Stars(this.stageWidth, this.stageHeight, 500);
     this.animate();
   }
   resize() {
@@ -24,10 +24,11 @@ export class Visual {
     this.canvas.height = this.stageHeight * this.pixelRatio;
     this.canvas.style.width = this.stageWidth + "px";
     this.canvas.style.height = this.stageHeight + "px";
-    this.show = new Stars(this.stageWidth, this.stageHeight, 2000);
+    this.show = new Stars(this.stageWidth, this.stageHeight, 500);
     this.ctx.scale(this.pixelRatio, this.pixelRatio);
   }
   animate() {
+    this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
     this.show.animate(this.ctx);
     requestAnimationFrame(this.animate.bind(this));
   }

@@ -9,7 +9,8 @@ import Main from "./main/Main";
 const AppWrapper = styled.div`
   display: flex;
   width: 100%;
-  min-height: 200vh;
+  // Background 높이도 같이 조정할 것
+  min-height: 300vh;
   flex-direction: column;
   overflow-x: clip;
   background-color: #24262b;
@@ -28,21 +29,21 @@ const Cursor = styled.div`
   transform: translate(-50%, -50%); /* 커서 중심으로 위치 조정 */
 `;
 
-const CursorInner = styled.div`
-  position: absolute;
-  z-index: 1002;
-  width: 5px;
-  height: 5px;
-  background-color: #6ec1e4;
-  border-radius: 50%;
-  pointer-events: none; /* 커서가 다른 요소에 영향을 미치지 않도록 설정 */
-  transform: translate(-50%, -50%); /* 커서 중심으로 위치 조정 */
-  transition: 0.2s ease;
-  &.touched {
-    width: 15px;
-    height: 15px;
-  }
-`;
+// const CursorInner = styled.div`
+//   position: absolute;
+//   z-index: 1002;
+//   width: 5px;
+//   height: 5px;
+//   background-color: #6ec1e4;
+//   border-radius: 50%;
+//   pointer-events: none; /* 커서가 다른 요소에 영향을 미치지 않도록 설정 */
+//   transform: translate(-50%, -50%); /* 커서 중심으로 위치 조정 */
+//   transition: 0.2s ease;
+//   &.touched {
+//     width: 15px;
+//     height: 15px;
+//   }
+// `;
 
 function App() {
   const handleMouseMove = (e) => {

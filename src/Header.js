@@ -107,7 +107,7 @@ const HeaderWrapper = styled.header`
   align-items: center;
   transition: 0.5s ease;
   transform: translateY(-100%);
-  background-color: #d90499;
+  background-color: white;
   backdrop-filter: blur(5px);
   &.frame-in {
     transform: translateY(0);
