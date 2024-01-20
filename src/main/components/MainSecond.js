@@ -125,7 +125,7 @@ const MainSecondBackground = styled.img`
 
 function MainSecond() {
   return (
-    <MainSecondWrapper id="main_second">
+    <MainSecondWrapper id="expertise">
       <TitleContainer>
         <Title>My Expertise</Title>
       </TitleContainer>

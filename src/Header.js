@@ -139,31 +139,76 @@ function Header() {
           <NavItemsContainer>
             <NavItems>
               <li className="nav-item">
-                <span className="nav-item_title">
+                <span
+                  className="nav-item_title"
+                  onClick={() => {
+                    const targetElement = document.getElementById("home");
+
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <span className="nav-item_number">{`01`}</span>
                   {`// home`}
                 </span>
               </li>
               <li className="nav-item">
-                <span className="nav-item_title">
+                <span
+                  className="nav-item_title"
+                  onClick={() => {
+                    const targetElement = document.getElementById("expertise");
+
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <span className="nav-item_number">{`02`}</span>
                   {`// expertise`}
                 </span>
               </li>
               <li className="nav-item">
-                <span className="nav-item_title">
+                <span
+                  className="nav-item_title"
+                  onClick={() => {
+                    const targetElement = document.getElementById("work");
+
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <span className="nav-item_number">{`03`}</span>
                   {`// work`}
                 </span>
               </li>
               <li className="nav-item">
-                <span className="nav-item_title">
+                <span
+                  className="nav-item_title"
+                  onClick={() => {
+                    const targetElement = document.getElementById("experience");
+
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <span className="nav-item_number">{`04`}</span>
                   {`// experience`}
                 </span>
               </li>
               <li className="nav-item">
-                <span className="nav-item_title">
+                <span
+                  className="nav-item_title"
+                  onClick={() => {
+                    const targetElement = document.getElementById("contact");
+
+                    if (targetElement) {
+                      targetElement.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                >
                   <span className="nav-item_number">{`05`}</span>
                   {`// contact`}
                 </span>

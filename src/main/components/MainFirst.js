@@ -30,13 +30,6 @@ const ArrowContainer = styled.span`
   color: white;
 `;
 
-// const Title = styled.span`
-//   color: white;
-//   font-size: 8rem;
-//   font-weight: bold;
-//   letter-spacing: 0.05rem;
-// `;
-
 const Subtitle = styled.span`
   transform: translateY(15vh);
   color: #cccccc;
@@ -47,7 +40,7 @@ const Subtitle = styled.span`
 
 function MainFirst() {
   return (
-    <MainFirstContainer>
+    <MainFirstContainer id="home">
       <ArrowContainer>{/* <ArrowDownwardIcon /> */}</ArrowContainer>
       <MainFirstInner>
         <Subtitle>{`Frontend devloper & Web Enginner, youngteck kim`}</Subtitle>

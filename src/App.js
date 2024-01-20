@@ -5,12 +5,13 @@ import "./global.css";
 import Background from "./Background";
 import Header from "./Header";
 import Main from "./main/Main";
+import Footer from "./Footer";
 
 const AppWrapper = styled.div`
   display: flex;
   width: 100%;
   // Background 높이도 같이 조정할 것
-  min-height: 400vh;
+  min-height: 620vh;
   flex-direction: column;
   overflow-x: clip;
   background-color: #24262b;
@@ -57,11 +58,12 @@ function App() {
 
   return (
     <AppWrapper onMouseMove={handleMouseMove}>
-      {/* <Background /> */}
+      <Background />
       <Cursor id="cursor" />
       {/* <CursorInner id="cursor_inner" /> */}
       <Header />
       <Main />
+      <Footer />
     </AppWrapper>
   );
 }

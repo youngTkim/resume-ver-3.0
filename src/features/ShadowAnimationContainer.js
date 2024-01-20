@@ -1,25 +1,15 @@
 import { useRef, useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
-const frameInAnimation = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(0%);
-  }
-`;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
-  &.frame-in {
-    animation: ${frameInAnimation} 0.75s ease;
+  &.frame-in > .shadow {
+    box-shadow: 20px 20px 0px #ff00b8;
   }
 `;
 
@@ -52,7 +42,7 @@ const useScrollAnimation = () => {
   return { isInViewport, ref };
 };
 
-export const ScrollAnimationContainer = ({ children }) => {
+export const ShadowAnimationContainer = ({ children }) => {
   const { ref, isInViewport } = useScrollAnimation();
   return (
     <Container ref={ref} className={isInViewport ? "frame-in" : ""}>
