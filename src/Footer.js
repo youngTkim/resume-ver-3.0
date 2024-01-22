@@ -7,6 +7,7 @@ const FooterWrapper = styled.footer`
   width: 100%;
   height: 20vh;
   background-color: #490c86;
+  z-index: 2;
 `;
 
 const FooterInner = styled.div`

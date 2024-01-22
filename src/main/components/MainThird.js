@@ -24,6 +24,7 @@ const Title = styled.span`
 
 const MainThirdWrapper = styled.div`
   display: flex;
+  margin-bottom: 10vh;
 `;
 
 const MainThirdInner = styled.div`
@@ -65,6 +66,13 @@ const GridElementContainer = styled.div`
     width: 100%;
     min-height: 75%;
     overflow: hidden;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -129,6 +137,13 @@ const GridElementContainer = styled.div`
     width: 100%;
     min-height: 70%;
     overflow: hidden;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
     img {
       width: 101%;
       height: 100%;
@@ -262,15 +277,19 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="narrow_image_container">
-                    <img src={SocketChat} alt="" />
+                    <a href="http://socketchat.store:4000">
+                      <img src={SocketChat} alt="" />
+                    </a>
                   </div>
                   <div className="narrow_name_container">
-                    <span className="name">SocketChat</span>
-                    <span className="name_personnel">- Personal Project</span>
-                    <span className="classfied">
-                      Web, Server & DB Development
-                    </span>
-                    <span className="route">Show Project ---</span>
+                    <a href="http://socketchat.store:4000">
+                      <span className="name">SocketChat</span>
+                      <span className="name_personnel">- Personal Project</span>
+                      <span className="classfied">
+                        Web, Server & DB Development
+                      </span>
+                      <span className="route">Show Project ---</span>
+                    </a>
                   </div>
                 </GridElementInner>
               </ScrollAnimationContainer>
@@ -286,12 +305,17 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="wide_image_container">
-                    <img src={OurPayment} alt="" />
+                    <a href="http://ourmainpro-33.s3-website.ap-northeast-2.amazonaws.com/">
+                      <img src={OurPayment} alt="" />
+                    </a>
                   </div>
+
                   <div className="wide_name_container">
-                    <span className="name">Our Payment - Team Project</span>
-                    <span className="classfied">Web Development</span>
-                    <span className="route">Show Project ---</span>
+                    <a href="http://ourmainpro-33.s3-website.ap-northeast-2.amazonaws.com/">
+                      <span className="name">Our Payment - Team Project</span>
+                      <span className="classfied">Web Development</span>
+                      <span className="route">Show Project ---</span>
+                    </a>
                   </div>
                 </GridElementInner>
               </ScrollAnimationContainer>
@@ -307,13 +331,17 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="narrow_image_container">
-                    <img src={DingoMockUpFull} alt="" />
+                    <a href="https://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
+                      <img src={DingoMockUpFull} alt="" />
+                    </a>
                   </div>
                   <div className="narrow_name_container">
-                    <span className="name">Dingo MockUp</span>
-                    <span className="name_personnel">- Personal Project</span>
-                    <span className="classfied">Web Development</span>
-                    <span className="route">Show Project ---</span>
+                    <a href="https://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
+                      <span className="name">Dingo MockUp</span>
+                      <span className="name_personnel">- Personal Project</span>
+                      <span className="classfied">Web Development</span>
+                      <span className="route">Show Project ---</span>
+                    </a>
                   </div>
                 </GridElementInner>
               </ScrollAnimationContainer>

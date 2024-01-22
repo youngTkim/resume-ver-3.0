@@ -13,7 +13,6 @@ const AppWrapper = styled.div`
   // Background 높이도 같이 조정할 것
   min-height: 620vh;
   flex-direction: column;
-  overflow-x: clip;
   background-color: #24262b;
 `;
 

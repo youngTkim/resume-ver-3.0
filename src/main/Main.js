@@ -3,6 +3,7 @@ import styled from "styled-components";
 import MainFirst from "./components/MainFirst";
 import MainSecond from "./components/MainSecond";
 import MainThird from "./components/MainThird";
+import MainFourth from "./components/MainFourth";
 import MainFifth from "./components/MainFifth";
 
 function Main() {
@@ -11,6 +12,7 @@ function Main() {
       <MainFirst />
       <MainSecond />
       <MainThird />
+      <MainFourth />
       <MainFifth />
     </>
   );

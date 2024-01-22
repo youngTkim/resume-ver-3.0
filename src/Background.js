@@ -4,13 +4,14 @@ import styled from "styled-components";
 
 const BackgroundWrapper = styled.div`
   position: absolute;
+  z-index: 0;
   left: 0;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 600vh;
+  height: 680vh;
 `;
 
 function Background() {

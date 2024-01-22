@@ -24,6 +24,7 @@ const MainFifthWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
+  z-index: 1;
 `;
 
 const ContactContainer = styled.div`
