@@ -1,25 +1,18 @@
 import { useRef, useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
 
-const frameInAnimation = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-
-  100%{
-    opacity: 1;
-    transform: translateY(0%);
-  }
-`;
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 0.75s ease;
+
   &.frame-in {
-    animation: ${frameInAnimation} 0.75s ease;
+    opacity: 1;
+    transform: translateY(0%);
   }
 `;
 
