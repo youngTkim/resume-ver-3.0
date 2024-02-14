@@ -7,6 +7,8 @@ import OurPayment from "../../assets/OurPayment.png";
 import AppleMockUp from "../../assets/AppleMockUp.png";
 import SocketChat from "../../assets/SocketChat.png";
 import DingoMockUpFull from "../../assets/DingoMockUpFull.png";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const TitleContainer = styled.section`
   display: flex;
@@ -222,6 +224,10 @@ const GridElementInner = styled.div`
 `;
 
 function MainThird() {
+  const [address, setAddress] = useState({
+    apple: "",
+    dingo: "",
+  });
   const arr = [
     [1, 1, 2],
     [1, 1, 2],
@@ -236,6 +242,12 @@ function MainThird() {
     [5, 5, 4],
     [5, 5, 4],
   ];
+  useEffect(() => {
+    setAddress({
+      apple: "http://applemockup.s3-website.ap-northeast-2.amazonaws.com",
+      dingo: "http://dingomockup.s3-website.ap-northeast-2.amazonaws.com",
+    });
+  }, []);
   return (
     <>
       <TitleContainer id="work">
@@ -306,13 +318,13 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="wide_image_container">
-                    <a href="http://ourmainpro-33.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href="http://ourmainpro-33.s3-website.ap-northeast-2.amazonaws.com">
                       <img src={OurPayment} alt="" />
                     </a>
                   </div>
 
                   <div className="wide_name_container">
-                    <a href="http://ourmainpro-33.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href="http://ourmainpro-33.s3-website.ap-northeast-2.amazonaws.com">
                       <span className="name">Our Payment - Team Project</span>
                       <span className="classfied">Web Development</span>
                       <span className="route">Show Project ---</span>
@@ -332,12 +344,12 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="narrow_image_container">
-                    <a href="http://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href={address.dingo}>
                       <img src={DingoMockUpFull} alt="" />
                     </a>
                   </div>
                   <div className="narrow_name_container">
-                    <a href="http://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href={address.dingo}>
                       <span className="name">Dingo MockUp</span>
                       <span className="name_personnel">- Personal Project</span>
                       <span className="classfied">Web Development</span>
@@ -358,12 +370,12 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="wide_image_container">
-                    <a href="http://applemockup.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href={address.apple}>
                       <img src={AppleMockUp} alt="" />
                     </a>
                   </div>
                   <div className="wide_name_container">
-                    <a href="http://applemockup.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href={address.apple}>
                       <span className="name">
                         AppleMockUp - Personal Project
                       </span>
