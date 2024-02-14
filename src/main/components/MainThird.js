@@ -77,6 +77,7 @@ const GridElementContainer = styled.div`
       width: 100%;
       height: 100%;
       transition: 0.3s ease;
+      cursor: pointer;
     }
   }
   &:hover .wide_image_container img {
@@ -331,12 +332,12 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="narrow_image_container">
-                    <a href="https://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href="http://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
                       <img src={DingoMockUpFull} alt="" />
                     </a>
                   </div>
                   <div className="narrow_name_container">
-                    <a href="https://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
+                    <a href="http://dingomockup.s3-website.ap-northeast-2.amazonaws.com/">
                       <span className="name">Dingo MockUp</span>
                       <span className="name_personnel">- Personal Project</span>
                       <span className="classfied">Web Development</span>
@@ -357,12 +358,18 @@ function MainThird() {
               <ScrollAnimationContainer>
                 <GridElementInner>
                   <div className="wide_image_container">
-                    <img src={AppleMockUp} alt="" />
+                    <a href="http://applemockup.s3-website.ap-northeast-2.amazonaws.com/">
+                      <img src={AppleMockUp} alt="" />
+                    </a>
                   </div>
                   <div className="wide_name_container">
-                    <span className="name">AppleMockUp - Personal Project</span>
-                    <span className="classfied">Web Development</span>
-                    <span className="route">Show Project ---</span>
+                    <a href="http://applemockup.s3-website.ap-northeast-2.amazonaws.com/">
+                      <span className="name">
+                        AppleMockUp - Personal Project
+                      </span>
+                      <span className="classfied">Web Development</span>
+                      <span className="route">Show Project ---</span>
+                    </a>
                   </div>
                 </GridElementInner>
               </ScrollAnimationContainer>
