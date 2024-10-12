@@ -115,8 +115,8 @@ function MainFourth() {
   const accordionData = [
     {
       title: "Codestates Frontend Bootcamp",
-      date: "2022.12 - 2023.07",
-
+      date: "",
+      // "2022.12 - 2023.07"
       content:
         "코드스테이츠 부트캠프를 통해 순수 html,css,js를 배웠고, react,styledcomponents,express를 통해 웹을 구축하는 방법을 배우고,프로젝트를 진행하게 되었습니다. css를 통한 웹 디자인과 인터렉션을, fetch와 promise를 통해 응답과 에러를 처리하는 방법을 cookie를 이용해 로그인 기능을 처리하는 기능을 사용하였습니다.",
       stacks: [
@@ -132,7 +132,8 @@ function MainFourth() {
     },
     {
       title: "Codestates Team Project - stackoverflow copy",
-      date: "2023.04 - 2023.07",
+      date: "",
+      // "2023.04 - 2023.07"
       content:
         "Stackoverflow Copy 프로젝트를 맡았을 때는 검색과 메인 페이지의 질문,답변 CRUD를 만드는 역할을 하였는데, jwt 토큰을 이용한 방식으로 백엔드 api와 통신하였고, 검색에 대한 부분을 프론트에서 구현하도록 query를 이용하여 답변 개수, 유저명, 태그에 따라 그에 맞는 조건을 가진 질문을 일치하도록 정규표현식을 사용해 구현했습니다. cors에러때문에 토큰을 받지 못하였는데 Access-Control-Expose-Headers 설정하는 백엔드쪽 문제가 있다고 발견하여 해결하였었습니다.",
       stacks: ["react", "styled-components", "aws", "axios", "postman"],
@@ -168,7 +169,8 @@ function MainFourth() {
     },
     {
       title: "Personal Project - resume",
-      date: "2023.08 - Present",
+      date: "",
+      // "2023.08 - Present"
       content:
         "성공한 웹 사이트들의 디자인에 어떤 UI/UX들을 사용하는지  확인하기 위해 Apple 메인페이지를 Copy해서 만들어보고, 다른 웹 사이트들을 참고해서 Dingo 웹 사이트를 재해석해서 만들어서, 그 경험을 바탕으로 새로운 UI/UX를 가진 이력서 포트폴리오를 만들었습니다.",
       stacks: ["canvas", "react", "styled-components"],
